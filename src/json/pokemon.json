@@ -1,0 +1,39 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbizarre",
+      "type": "Plante",
+      "shortDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange",
+      "longDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange. Il possède un bulbe sur le dos, qui grandit en même temps que lui. Ce bulbe contient des graines qui poussent en même temps que Bulbizarre. Il possède une queue épaisse et forte, et de petites dents pointues. Ses yeux sont rouges avec des pupilles noires. Ses pieds possèdent trois griffes."
+    },
+    {
+      "id": 2,
+      "name": "Bulbizarre",
+      "type": "Plante",
+      "shortDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange",
+      "longDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange. Il possède un bulbe sur le dos, qui grandit en même temps que lui. Ce bulbe contient des graines qui poussent en même temps que Bulbizarre. Il possède une queue épaisse et forte, et de petites dents pointues. Ses yeux sont rouges avec des pupilles noires. Ses pieds possèdent trois griffes."
+    },
+    {
+      "id": 3,
+      "name": "Bulbizarre",
+      "type": "Plante",
+      "shortDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange",
+      "longDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange. Il possède un bulbe sur le dos, qui grandit en même temps que lui. Ce bulbe contient des graines qui poussent en même temps que Bulbizarre. Il possède une queue épaisse et forte, et de petites dents pointues. Ses yeux sont rouges avec des pupilles noires. Ses pieds possèdent trois griffes."
+    },
+    {
+      "id": 4,
+      "name": "Bulbizarre",
+      "type": "Plante",
+      "shortDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange",
+      "longDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange. Il possède un bulbe sur le dos, qui grandit en même temps que lui. Ce bulbe contient des graines qui poussent en même temps que Bulbizarre. Il possède une queue épaisse et forte, et de petites dents pointues. Ses yeux sont rouges avec des pupilles noires. Ses pieds possèdent trois griffes."
+    },
+    {
+      "id": 5,
+      "name": "Bulbizarre",
+      "type": "Plante",
+      "shortDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange",
+      "longDescription": "Bulbizarre est un Pokémon quadrupède au corps vert et orange. Il possède un bulbe sur le dos, qui grandit en même temps que lui. Ce bulbe contient des graines qui poussent en même temps que Bulbizarre. Il possède une queue épaisse et forte, et de petites dents pointues. Ses yeux sont rouges avec des pupilles noires. Ses pieds possèdent trois griffes."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+import { Component, Input } from "@angular/core";
+import { Pokemon } from "src/app/Interface/pokemon";
+
+@Component({
+  selector: "app-pokemon-details",
+  templateUrl: "./pokemon-details.component.html",
+  styleUrls: ["./pokemon-details.component.scss"],
+})
+export class PokemonDetailsComponent {
+  @Input() pokemon?: Pokemon;
+  @Input() readonly: boolean = true;
+  modify: boolean = false;
+
+  constructor() {}
+
+  toggleModify() {
+    this.modify = !this.modify;
+    console.log(this.modify);
+  }
+}
