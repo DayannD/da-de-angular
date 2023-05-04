@@ -1,0 +1,12 @@
+<div *ngIf="listPokemon$ | async">
+
+
+  <div class="content d-flex">
+    <!-- Ces éléments sont affichés sur la même ligne -->
+    <div>
+      <app-show-pokemon *ngIf="listPokemon.length > 1" [pokemon]="listPokemon" (removeEvent)="removePokemon($event)"
+        (showEvent)="showPokemon($event)"></app-show-pokemon>
+      <button class="btn" [routerLink]="['/favoris']">voir mes favoris</button>
+    </div>
+    <app-pokemon-details [pokemon]="selectPokemon"></app-pokemon-details>
+  </div>

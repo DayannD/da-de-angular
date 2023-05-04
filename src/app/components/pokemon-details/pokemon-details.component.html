@@ -3,9 +3,9 @@
     <app-modify [pokemonId]="pokemon.id" (validate)="toggleModify()"></app-modify>
   </div>
   <ng-template #edit>
-    <mat-card>
+    <mat-card class="card">
       <mat-card-header>
-        <mat-card-title>{{pokemon.name}}</mat-card-title>
+        <mat-card-title class="title">{{pokemon.name}}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <div class="d-flex flex-column justify-start align-center">
@@ -13,11 +13,14 @@
             <title>description</title>
             <p>{{pokemon.shortDescription}}</p>
           </div>
-          <div>
-            <strong>Types</strong>:
-            <span>{{pokemon.type}}</span>
-            <button (click)="toggleModify()">modifier</button>
+          <div class="info">
+            <strong class="typeTitle">Types</strong>:
+            <span class="type">{{pokemon.type}}</span>
+            <p>|</p>
+            <strong class="puissanceTitle">Puissance</strong>:
+            <span class="puissance">{{pokemon.type | puissance}}</span>
           </div>
+          <button class="btn" (click)="toggleModify()">modifier</button>
         </div>
       </mat-card-content>
     </mat-card>

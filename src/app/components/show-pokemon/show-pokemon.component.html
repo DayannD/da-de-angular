@@ -1,11 +1,12 @@
 <div *ngFor="let item of pokemon">
-  <mat-card>
+  <mat-card class="card">
     <mat-card-header>
-      <mat-card-title>{{item.name}}</mat-card-title>
+      <mat-card-title class="title">{{item.name}}</mat-card-title>
     </mat-card-header>
     <mat-card-actions>
-      <button (click)="removePokemon(item.id)" mat-button>remove pokemon</button>
-      <button (click)="showPokemon(item.id)" mat-button>showPokemon</button>
+      <button class="btn" (click)="removePokemon(item.id)" mat-button>remove pokemon</button>
+      <button class="btn" (click)="showPokemon(item.id)" mat-button>showPokemon</button>
+      <button class="btn" (click)="addFavoritePokemon(item.id)" mat-button>addFavoritePokemon</button>
     </mat-card-actions>
   </mat-card>
 </div>

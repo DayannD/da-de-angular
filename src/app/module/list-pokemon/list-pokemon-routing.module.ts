@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { FavoritePokemonComponent } from "./favorite-pokemon.component";
+import { ListPokemonComponent } from "./list-pokemon.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: FavoritePokemonComponent,
+    component: ListPokemonComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FavoritePokemonRoutingModule {}
+export class ListPokemonRoutingModule {}

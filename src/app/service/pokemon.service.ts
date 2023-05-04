@@ -39,7 +39,7 @@ export class PokemonService {
       {
         id: 4,
         name: "Florizarre",
-        type: "Plante",
+        type: "Eau",
         shortDescription:
           "Florizarre est un Pokémon quadrupède au corps vert et orange",
         longDescription:
@@ -58,7 +58,19 @@ export class PokemonService {
     return of(this.data.listPokemon.find((pokemon) => pokemon.id === id)!);
   }
 
-  addPokemon(pokemon: Pokemon) {
-    this.favoritePokemon.push(pokemon);
+  addPokemon(id: number) {
+    const pokemon = this.data.listPokemon.find((pokemon) => pokemon.id === id);
+    this.favoritePokemon.push(pokemon!);
+  }
+
+  getAllFavoritePokemons(): Observable<Pokemon[]> {
+    return of(this.favoritePokemon);
+  }
+
+  removeFavoritePokemon(id: number): Observable<Pokemon[]> {
+    this.favoritePokemon = this.favoritePokemon.filter(
+      (pokemon) => pokemon.id !== id
+    );
+    return of(this.favoritePokemon);
   }
 }

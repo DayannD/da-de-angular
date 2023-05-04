@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Pokemon } from "src/app/Interface/pokemon";
+import { PokemonService } from "src/app/service/pokemon.service";
 
 @Component({
   selector: "app-show-pokemon",
@@ -11,7 +12,7 @@ export class ShowPokemonComponent {
   @Output() removeEvent: EventEmitter<number> = new EventEmitter<number>();
   @Output() showEvent: EventEmitter<number> = new EventEmitter<number>();
 
-  constructor() {}
+  constructor(private readonly pokemonService: PokemonService) {}
 
   ngAfterViewInit() {
     console.log(this.pokemon);
@@ -23,5 +24,9 @@ export class ShowPokemonComponent {
 
   showPokemon(id: number) {
     this.showEvent.emit(id);
+  }
+
+  addFavoritePokemon(id: number) {
+    this.pokemonService.addPokemon(id);
   }
 }
