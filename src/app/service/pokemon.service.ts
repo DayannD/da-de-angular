@@ -6,6 +6,7 @@ import { Pokemon } from "../Interface/pokemon";
   providedIn: "root",
 })
 export class PokemonService {
+  favoritePokemon: Pokemon[] = [];
   data = {
     listPokemon: [
       {
@@ -55,5 +56,9 @@ export class PokemonService {
 
   getOnePokemons(id: number): Observable<Pokemon> {
     return of(this.data.listPokemon.find((pokemon) => pokemon.id === id)!);
+  }
+
+  addPokemon(pokemon: Pokemon) {
+    this.favoritePokemon.push(pokemon);
   }
 }

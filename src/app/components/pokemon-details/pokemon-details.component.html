@@ -1,23 +1,26 @@
 <div *ngIf="pokemon != null">
-  <div *ngIf="modify" then edit>
-    <app-modify [pokemonId]="pokemon.id"></app-modify>
+  <div *ngIf="modify; else edit">
+    <app-modify [pokemonId]="pokemon.id" (validate)="toggleModify()"></app-modify>
   </div>
-  <mat-card #edit>
-    <mat-card-header>
-      <mat-card-title>{{pokemon.name}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <div class="d-flex flex-column justify-start align-center">
-        <div>
-          <title>description</title>
-          <p>{{pokemon.shortDescription}}</p>
+  <ng-template #edit>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{pokemon.name}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="d-flex flex-column justify-start align-center">
+          <div>
+            <title>description</title>
+            <p>{{pokemon.shortDescription}}</p>
+          </div>
+          <div>
+            <strong>Types</strong>:
+            <span>{{pokemon.type}}</span>
+            <button (click)="toggleModify()">modifier</button>
+          </div>
         </div>
-        <div>
-          <strong>Types</strong>:
-          <span>{{pokemon.type}}</span>
-          <button (click)="toggleModify()">modifier</button>
-        </div>
-      </div>
-    </mat-card-content>
-  </mat-card>
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+
 </div>

@@ -24,6 +24,10 @@ export class AppComponent {
     });
   }
 
+  ngAfterViewInit() {
+    this.listPokemon$ = this.pokemonService.getAllPokemons();
+  }
+
   removePokemon(id: number) {
     this.listPokemon = this.listPokemon.filter((pokemon) => pokemon.id !== id);
   }

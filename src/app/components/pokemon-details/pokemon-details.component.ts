@@ -15,5 +15,6 @@ export class PokemonDetailsComponent {
 
   toggleModify() {
     this.modify = !this.modify;
+    console.log(this.modify);
   }
 }

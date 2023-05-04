@@ -15,6 +15,7 @@ import { ContentComponent } from "./components/content/content.component";
 import { ModifyComponent } from "./components/modify/modify.component";
 import { PokemonDetailsComponent } from "./components/pokemon-details/pokemon-details.component";
 import { ShowPokemonComponent } from "./components/show-pokemon/show-pokemon.component";
+import { FavoritePokemonComponent } from './module/favorite-pokemon/favorite-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ShowPokemonComponent } from "./components/show-pokemon/show-pokemon.com
     ShowPokemonComponent,
     PokemonDetailsComponent,
     ModifyComponent,
+    FavoritePokemonComponent,
   ],
   imports: [
     BrowserModule,

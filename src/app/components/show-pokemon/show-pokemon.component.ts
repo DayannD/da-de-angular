@@ -13,6 +13,10 @@ export class ShowPokemonComponent {
 
   constructor() {}
 
+  ngAfterViewInit() {
+    console.log(this.pokemon);
+  }
+
   removePokemon(id: number) {
     this.removeEvent.emit(id);
   }

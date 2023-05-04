@@ -1,5 +1,14 @@
 <div *ngIf="pokemon$  |async as pokemon">
   <mat-card>
-    <input type="text" onchange="pokemon.name = this.value" value="{{pokemon.name}}">
+    <p>modifier le nom</p>
+    <input type="text" (change)="modifyName($event)" value="{{pokemon.name}}">
+
+    <p>modifier le type</p>
+    <input type="text" (change)="modifyType($event)" value="{{pokemon.type}}">
+
+    <p>modifier le text</p>
+    <input type="text" (change)="modifyShortDescription($event)" value="{{pokemon.shortDescription}}">
+
+    <button (click)="validateEvent()">Valider</button>
   </mat-card>
 </div>
