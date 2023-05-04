@@ -1,0 +1,5 @@
+<div *ngIf="pokemon$  |async as pokemon">
+  <mat-card>
+    <input type="text" onchange="pokemon.name = this.value" value="{{pokemon.name}}">
+  </mat-card>
+</div>
